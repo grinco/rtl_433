@@ -770,7 +770,7 @@ mappings = {
             "device_class": "volume_flow_rate",
             "name": "Volume Flow Rate",
             "unit_of_measurement": "m3/min",
-            "value_template": "{{ value|float }}",
+            "value_template": "{{ value.split(" ")[0]|float }}",
             "state_class": "measurement"
         }
     },
