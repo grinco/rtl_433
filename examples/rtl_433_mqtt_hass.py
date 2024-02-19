@@ -762,6 +762,19 @@ mappings = {
         }
     },
 
+    # M-bus water flow sensor
+    "inst_volume_flow_min_0": {
+        "device_type": "sensor",
+        "object_suffix": "volume_flow_rate",
+        "config": {
+            "device_class": "volume_flow_rate",
+            "name": "Volume Flow Rate",
+            "unit_of_measurement": "m3/min",
+            "value_template": "{{ value|float }}",
+            "state_class": "measurement"
+        }
+    },
+
 }
 
 # Use secret_knock to trigger device automations for Honeywell ActivLink
