@@ -775,6 +775,15 @@ mappings = {
         }
     },
 
+    "state": {
+        "device_type": "sensor",
+        "object_suffix": "state",
+        "config": {
+            "name": "State",
+            "value_template": "{{ value }}",
+        }
+    },
+
 }
 
 # Use secret_knock to trigger device automations for Honeywell ActivLink
